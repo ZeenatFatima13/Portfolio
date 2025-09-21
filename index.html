@@ -1,0 +1,156 @@
+<!--
+  Digital Portfolio — single-file template (index.html) customized for Zeenat Fatima
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zeenat Fatima | Portfolio</title>
+  <meta name="description" content="Portfolio of Zeenat Fatima - MBA Student, Finance & Investment Banking Enthusiast" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#06b6d4;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    body{background:linear-gradient(180deg,var(--bg), #071028); color:#e6eef6; line-height:1.5}
+    .container{max-width:var(--maxw);margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:grid;place-items:center;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    nav a:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;margin-top:28px}
+    .card{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .intro h2{font-size:26px;margin-bottom:8px}
+    .intro p.lead{color:var(--muted);margin-bottom:14px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .contact-card{display:flex;flex-direction:column;gap:12px}
+    .stat{display:flex;justify-content:space-between;align-items:center}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#021020;text-decoration:none;font-weight:600}
+    .projects{margin-top:22px;display:grid;gap:14px}
+    .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .proj{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    .proj h3{font-size:16px;margin-bottom:6px}
+    .proj p{color:var(--muted);font-size:14px}
+    footer{margin-top:34px;padding:18px;border-radius:12px;background:transparent;color:var(--muted);text-align:center}
+    @media (max-width:880px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">ZF</div>
+        <div>
+          <h1>Zeenat Fatima</h1>
+          <div class="muted">MBA Student | Finance & Investment Banking Enthusiast</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card intro">
+        <h2>Hi — I’m Zeenat Fatima.</h2>
+        <p class="lead">MBA student at Lovely Professional University with a background in Civil Engineering and hands-on experience in finance internships, corporate restructuring, and market analysis. Passionate about investment banking, financial modeling, and valuation.</p>
+
+        <div class="mb-8">
+          <h4 class="muted">Key skills</h4>
+          <div class="skills">
+            <span class="chip">Advanced MS Excel</span>
+            <span class="chip">Financial Modelling</span>
+            <span class="chip">Financial Analysis</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">SPSS</span>
+            <span class="chip">Google Workspace</span>
+            <span class="chip">Canva</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="muted">About me</h4>
+          <p class="muted">Analytical and adaptable MBA student with internship experience in J&K Bank and Public Works Department, skilled at evaluating financial proposals, creating models, and optimizing processes. Recognized for being meticulous, collaborative, and result-driven.</p>
+        </div>
+
+        <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn" href="resume.pdf" download>Download CV</a>
+        </div>
+      </div>
+
+      <aside class="card contact-card">
+        <div>
+          <h4 class="muted">Contact</h4>
+          <div class="stat"><span class="muted">Email</span><a href="mailto:xienatfatima@gmail.com">xienatfatima@gmail.com</a></div>
+          <div class="stat"><span class="muted">Phone</span><a href="tel:+917006701874">+91-7006701874</a></div>
+          <div class="stat"><span class="muted">LinkedIn</span><a href="https://www.linkedin.com/in/zeenat-fatima" target="_blank">linkedin.com/in/zeenat-fatima</a></div>
+        </div>
+
+        <div style="border-top:1px dashed rgba(255,255,255,0.03);padding-top:12px;margin-top:12px">
+          <h4 class="muted">Quick stats</h4>
+          <div class="stat"><div class="muted">Education</div><div>MBA - Lovely Professional University</div></div>
+          <div class="stat"><div class="muted">Experience</div><div>Finance Intern - J&K Bank | PWD Intern</div></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects & Work</h2>
+      <div class="proj-grid">
+        <article class="proj">
+          <h3>Corporate Restructuring Project</h3>
+          <p>Analytical study on EPS accretion and restructuring in the HDFC Ltd–HDFC Bank merger, focusing on shareholder value and capital structure.</p>
+          <div class="tags"><span class="chip">Corporate Restructuring</span><span class="chip">Valuation</span></div>
+        </article>
+
+        <article class="proj">
+          <h3>Corporate Finance Project</h3>
+          <p>Assessed capital costs of Marico Ltd by calculating CAPM equity and YTM debt, evaluating WACC and financial health under market fluctuations.</p>
+          <div class="tags"><span class="chip">Corporate Finance</span><span class="chip">WACC</span></div>
+        </article>
+
+        <article class="proj">
+          <h3>Financial Analysis Project</h3>
+          <p>Conducted three-year financial ratio analysis of JSW Holdings Ltd, benchmarking against peers and delivering insights on liquidity, profitability, and solvency.</p>
+          <div class="tags"><span class="chip">Financial Ratios</span><span class="chip">Analysis</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="card" style="margin-top:20px">
+      <h2>Resume & Achievements</h2>
+      <ul style="margin-top:10px;color:var(--muted)">
+        <li>Finance Intern — J&K Bank Ltd (2025)</li>
+        <li>Intern — Public Works Department, Jammu & Srinagar (2022–23)</li>
+        <li>First Runner-up, BrandSell Contest (Feb 2025)</li>
+        <li>Certifications: EY – Financial Modelling & Valuation, Udemy – Corporate Finance, NPTEL – Soft Skills & Personality</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:20px">
+      <h2>Contact</h2>
+      <p class="muted">Interested in hiring me or collaborating? Send me an email or message directly.</p>
+      <a class="btn" href="mailto:xienatfatima@gmail.com?subject=Portfolio%20Contact">Email Me</a>
+    </section>
+
+    <footer>
+      Built with ❤️ • Zeenat Fatima
+    </footer>
+  </div>
+</body>
+</html>
